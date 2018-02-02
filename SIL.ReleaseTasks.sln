@@ -4,6 +4,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIL.ReleaseTasks", "SIL.Rel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIL.ReleaseTasks.Tests", "SIL.ReleaseTasks.Tests\SIL.ReleaseTasks.Tests.csproj", "{6672155C-42F8-4164-8AF8-E900C3D95AC1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{2C08C531-514F-4022-BE91-211F344D720E}"
+ProjectSection(SolutionItems) = preProject
+	CHANGELOG.md = CHANGELOG.md
+	LICENSE = LICENSE
+	README.md = README.md
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
