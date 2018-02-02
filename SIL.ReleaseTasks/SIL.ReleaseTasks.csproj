@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net40;net45;netstandard2.0</TargetFrameworks>
+    <Company>SIL International</Company>
+    <Product>
+    </Product>
+  </PropertyGroup>
+  <ItemGroup Condition="$(TargetFramework.Contains('netstandard'))">
+    <PackageReference Include="MarkdownDeep.NET.Core" Version="1.5.0.2" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="15.5.180" />
+  </ItemGroup>
+  <ItemGroup Condition="!$(TargetFramework.Contains('netstandard'))">
+    <PackageReference Include="MarkdownDeep.NET.Patched" Version="1.5.0.1" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+  </ItemGroup>
+</Project>
